@@ -14,7 +14,7 @@ let newNumber = Number(score);
 let booleanValue = 1;
 
 let definedBooleanValue = Boolean(booleanValue);
-console.log(definedBooleanValue);
+// console.log(definedBooleanValue);
 
 // true => 1
 // false => 0
@@ -24,5 +24,25 @@ console.log(definedBooleanValue);
 let NUM = 45;
 
 let Str = String(NUM);
-console.log(Str);
-console.log(typeof Str);
+// console.log(Str);
+// console.log(typeof Str);
+
+// ***************************************** OPERATIONS *************************************************
+
+// console.log(5 + 5);
+// console.log(5 - 5);
+// console.log(5 * 5);
+// console.log(5 / 5);
+// console.log(5 % 5);
+// console.log(5 ** 3);
+
+let str1 = "TANMAY";
+let str2 = "BARI";
+
+let str3 = str1 + str2;
+// console.log(str3);
+
+// console.log("1" + 2); // 12
+// console.log(1 + "2"); // 12
+// console.log(1 + 2 + "2"); // 32
+// console.log("1" + 2 + 2); // 122
