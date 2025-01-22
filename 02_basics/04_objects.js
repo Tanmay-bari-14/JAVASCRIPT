@@ -77,3 +77,16 @@ console.log(instaUser.hasOwnProperty("isLoggedIn")); // checks the objects havin
 // data.forEach((element) => {
 //   console.log(element.name);
 // });
+
+// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& objects destructuring &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+const book = {
+  name: "History",
+  price: 199,
+  publish: 2016,
+};
+
+book.name; //we prefer this alsk\o used
+
+const { name: n } = book; //destructor method
+console.log(n);
