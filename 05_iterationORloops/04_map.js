@@ -27,3 +27,15 @@ countries.set("FR", "France");
 for (const [key, value] of countries) {
   console.log(key, "stands for " + value);
 }
+
+// map cannot applicable on OBJECTS
+const user = {
+  name: "user1",
+  age: 50,
+  city: "uk",
+  gender: "male",
+};
+
+for (const [key, value] of user) {
+  console.log(key, value);
+}
