@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add & remove</title>
+<body style="background-color: #212121; color: #fff;">
+
+</head>
+<body>
+    <h1>Add & Remove element</h1>
+
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+
+    function addLanguage(langName) {
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+
+        const ul = document.querySelector('.language')
+        ul.appendChild(li)
+    }
+
+    addLanguage('html')
+    addLanguage('C#')
+    addLanguage('react')
+
+
+    // OPTIMIZED WAY 
+
+    function optimizedWay (langName2) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName2))
+        document.querySelector('.language').appendChild(li)
+    }
+
+    optimizedWay("angular")
+
+
+    // EDIT or REPLCAE
+
+    const thirdLang = document.querySelector('li:nth-child(3)')
+    // thirdLang.innerHTML = "edited lang"
+
+    const li = document.createElement('li')
+    li.textContent = "edited lang"
+
+    // thirdLang.appendChild(li)     ===> to add at the position of selected nth-child(3)
+    thirdLang.replaceWith(li)
+
+
+    // 
+    const firstLang = document.querySelector('li:first-child')
+    
+    firstLang.outerHTML = "<li>typescript</li>"
+
+
+
+    // REMOVE
+
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+</script>
+</html>
