@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons</title>
+    <style>
+      body {
+        height: 100vh;
+        background-color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .button {
+        padding: 15px;
+        background-color: blue;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button" id="btn1">Button 1</div>
+    <div class="button" id="btn2">Button 2</div>
+    <div class="button" id="btn3">Button 3</div>
+    <div class="button" id="btn4">Button 4</div>
+    <div class="button" id="btn5">Button 5</div>
+  </body>
+  <script>
+    // ****************************************        USING QUERYSELECTOR         ****************************
+    // querySelector only works on a first button if we seleft a button using class
+    // const exOne = document.querySelector(".button");
+    // exOne.addEventListener("click", () => {
+    //   console.log("btn clicked");
+    // });
+
+    // ****************************************        USING QUERYSELECTOR ALL         ****************************
+    // querySelectorAll works on a button. but gives you a nodelist if you want to add events on each button you need use loop on nodelist and add events on each btn
+    // const exTwo = document.querySelectorAll(".button");
+    // console.log(btn2);
+
+    // exTwo.forEach((btn) => {
+    //   btn.addEventListener("click", () => {
+    //     console.log("btn clicked");
+    //   });
+    // });
+
+    // ****************************************        USING getElementsByClassName         ****************************
+    // By using className we will get the all buttons having same class and all will be HTML collection and not able to use "FOREACH FUNCTION", if you want to use "FOREACH FUNCTION" then you had to convert it into array using ARRAY.from(to be converted into array),,,,,but you can use FOR loop also
+
+    // apply FOR OF loop for all buttons to add events ----------------------- FOR OF LOOP
+    // const exThree = document.getElementsByClassName("button");
+    // console.log(exThree);
+
+    // for (const element of exThree) {
+    //   element.addEventListener("click", () => {
+    //     console.log("btn click");
+    //   });
+    // }
+
+    // convert in into array and using FOREACH ---------------------------- Converted array and FOREACH loop
+    // const allBtns = Array.from(exThree);
+    // console.log(allBtns);
+
+    // allBtns.forEach((btn) => {
+    //   btn.addEventListener("click", () => {
+    //     console.log("btn click");
+    //   });
+    // });
+
+    // ****************************************        USING getElementById         ****************************
+    // const exFour = document.getElementById("btn1");
+    // exFour.addEventListener("click", () => {
+    //   console.log("btn click");
+    // });
+  </script>
+</html>
